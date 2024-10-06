@@ -8,9 +8,9 @@ interface ScrollAnimationProps {
 const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5}} // Starting position and opacity
-      whileInView={{ opacity: 1, scale : 1 }} // Position and opacity when in view
-      transition={{ duration: 1.5 }} // Transition duration
+      initial={{ opacity: 0, x: 100 }} // Start fully transparent and 100px to the right
+      whileInView={{ opacity: 1, x: 0 }} // Fade in and move to its original position
+      transition={{ duration: 1.0 }} // Transition duration
       viewport={{ once: false }} // Keep animating when scrolling
       className="w-full"
     >
