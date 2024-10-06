@@ -103,7 +103,9 @@ const Home: React.FC = () => {
   const [sendTo, setSendTo] = useState<string>('');
 
   return (
-    <> <ScrollAnimation>
+
+    
+    <main className='bg-smoky'> <ScrollAnimation>
       {/* Hero Section */}
       <div className="min-h-screen flex items-center relative" style={{
         backgroundImage: `url(/images/secure.webp)`,
@@ -192,7 +194,7 @@ const Home: React.FC = () => {
     </h2>
 
 <div className="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-4 gap-40">
-  
+
 
       {/* Card 1 */}
       <div className="bg-onyx border border-black rounded-3xl p-14 shadow-2xl relative z-50  ">
@@ -328,14 +330,14 @@ const Home: React.FC = () => {
 
 
 
-<footer className="text-black font-black text-base  " id='footer'>
+<footer className=" text-white font-black text-base  " id='footer'>
   <div className="container mx-auto px-4">
     <div className="flex flex-col md:flex-row justify-between items-start">
       {/* Logo Section */}
       <div className="lg:h-[100px] md:h-[50px] max-md:mt-8 mb-8 md:mb-0">
         <a href="/">
           <Image
-            src="/images/LOGO2.png"
+            src="/images/removed.png"
             width={400}
             height={350}
             className="max-md:w-4/5 mx-auto"
@@ -408,7 +410,7 @@ const Home: React.FC = () => {
 
 
 
-    </>
+    </main>
   );
 };
 
