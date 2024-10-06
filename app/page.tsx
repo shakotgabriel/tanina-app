@@ -25,7 +25,7 @@ const FAQSection: React.FC = () => {
 
 
     
-    <section className="bg-green-50 py-16 rounded-none ">
+    <section className="bg-green-50 py-10 rounded-lg px-10 ">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Frequently Asked Questions</h2>
         <div className="max-w-3xl mx-auto space-y-4">
@@ -178,99 +178,132 @@ const Home: React.FC = () => {
       <ScrollAnimation>
 
 
-      <section className="bg-green-50 py-16 px-28 mb-20 ml-20 mr-20 rounded-3xl mt-20">
-      
-        <div className="container mx-auto px-8">
-          <h2 className="text-3xl font-bold text-center mb-20 mt-28 text-green-800">Why choose Tanina Transfer</h2>
-          
-          <div className="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-4 gap-40">
-           
-            {/* Card 1 */}
-            <div className="bg-green-100 border border-gray-200 rounded-lg shadow p-6 tailwindd-bounce">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Service 1</h3>
-              <p className="text-gray-600 mb-4">
-                This is a description of service 1. We offer the best in class service with great features.
-              </p>
-              <a className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg text-green-900 bg-white focus:ring-4 focus:outline-none focus:ring-blue-300">
-                Read More
-                <svg
-                  className="w-4 h-4 ml-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
+      <section className="relative bg-gradient-to-bl from-green-400 via-green-300 to-green-400 py-16 px-28  rounded-3xl mt-20 overflow-hidden">
+  {/* Background Image */}
+  <section
+    className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
+    style={{ backgroundImage: "url('/images/moneyp.jpg')" }}
+  ></section>
+  
+  {/* Content */}
+  <div className="relative z-10 container mx-auto px-8">
+    <h2 className="text-4xl font-black text-center mb-20 mt-28 text-white">
+      Why choose Tanina Transfer
+    </h2>
 
-            {/* Card 2 */}
-            <div className="bg-green-100 border border-gray-200 rounded-lg shadow p-6">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Service 2</h3>
-              <p className="text-gray-600 mb-4">
-                This is a description of service 2. We provide excellent solutions for your needs.
-              </p>
-              <a className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg text-green-900 bg-white focus:ring-4 focus:outline-none focus:ring-blue-300">
-                Read More
-                <svg
-                  className="w-4 h-4 ml-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
+<div className="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-4 gap-40">
+  
 
-            {/* Card 3 */}
-            <div className="bg-green-100 border border-gray-200 rounded-lg shadow p-6">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Service 3</h3>
-              <p className="text-gray-600 mb-4">
-                This is a description of service 3. We ensure fast and secure transfers.
-              </p>
-              <a className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg text-green-900 bg-white focus:ring-4 focus:outline-none focus:ring-blue-300">
-                Read More
-                <svg
-                  className="w-4 h-4 ml-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
+      {/* Card 1 */}
+      <div className="bg-onyx border border-black rounded-3xl p-14 shadow-2xl relative z-50  ">
+        <h3 className="text-2xl font-black mb-4 text-white">Money Transfer</h3>
+        <p className="text-white italic mb-4">
+          Users can send funds to other Tanina users or withdraw funds to their bank accounts or mobile wallets, with real-time processing.
+        </p>
+        <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg text-black bg-green-200 hover:bg-white">
+          Read More
+          <svg
+            className="w-4 h-4 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 12h14M12 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
 
-            {/* Card 4 */}
-            <div className="bg-green-100 border border-gray-200 rounded-lg shadow p-6">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Service 4</h3>
-              <p className="text-gray-600 mb-4">
-                This is a description of service 4. You can trust us with your transfers.
-              </p>
-              <a className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg text-green-900 bg-white focus:ring-4 focus:outline-none focus:ring-blue-300">
-                Read More
-                <svg
-                  className="w-4 h-4 ml-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section></ScrollAnimation>
+      {/* Other Cards (Same as Card 1) */}
+      <div className="bg-onyx border border-black rounded-3xl p-14 shadow-2xl relative z-10">
+        <h3 className="text-2xl font-black mb-4 text-white">Mobile Money Integration</h3>
+        <p className="text-white italic mb-4">
+          Users can link their mobile money accounts to their Tanina profiles, facilitating deposits and withdrawals between Tanina wallets and mobile money accounts.
+        </p>
+        <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg text-black bg-green-200 hover:bg-white">
+          Read More
+          <svg
+            className="w-4 h-4 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 12h14M12 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-onyx border border-black rounded-3xl p-14 shadow-2xl relative z-10">
+        <h3 className="text-2xl font-black mb-4 text-white">Automatic Bank Account Creation</h3>
+        <p className="text-white italic mb-4">
+          Upon signing up, Tanina communicates with its partner bank’s API to set up a bank account, eliminating the need for manual account setup.
+        </p>
+        <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg text-black bg-green-200 hover:bg-white">
+          Read More
+          <svg
+            className="w-4 h-4 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 12h14M12 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Card 4 */}
+      <div className="bg-onyx border border-black rounded-3xl p-14 shadow-2xl relative z-10">
+        <h3 className="text-2xl font-black mb-4 text-white">ATM withdrawal</h3>
+        <p className="text-white italic mb-4">
+          After linking their bank account, users can access funds through compatible ATMs across South Sudan, allowing for convenient cash access.
+        </p>
+        <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg text-black bg-green-200 hover:bg-white">
+          Read More
+          <svg
+            className="w-4 h-4 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 12h14M12 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+     
+     
+     </ScrollAnimation>
       
   
 
@@ -295,7 +328,7 @@ const Home: React.FC = () => {
 
 
 
-<footer className="bg-white ">
+<footer className="text-black font-black text-base  " id='footer'>
   <div className="container mx-auto px-4">
     <div className="flex flex-col md:flex-row justify-between items-start">
       {/* Logo Section */}
@@ -313,25 +346,25 @@ const Home: React.FC = () => {
 
       {/* Quick Links Section */}
       <div className="mb-8 md:mb-0">
-        <h5 className="text-lg font-semibold text-gray-800 ">Quick Links</h5>
+        <h5 className="text-base font-semibold  ">Quick Links</h5>
         <ul className="space-y-2">
           <li>
-            <a href="#" className="text-gray-600 hover:text-green-600 transition duration-300">
+            <a href="#" className=" hover:text-green-600 transition duration-300">
               About Us
             </a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-green-600 transition duration-300">
+            <a href="#" className=" hover:text-green-600 transition duration-300">
               Services
             </a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-green-600 transition duration-300">
+            <a href="#" className=" hover:text-green-600 transition duration-300">
               FAQ
             </a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-green-600 transition duration-300">
+            <a href="#" className=" hover:text-green-600 transition duration-300">
               Contact Us
             </a>
           </li>
@@ -339,15 +372,15 @@ const Home: React.FC = () => {
       </div>
 
       {/* Contact Section */}
-      <div>
-        <h5 className="text-lg font-semibold text-gray-800 ">Contact Us</h5>
-        <p className="text-gray-600">Email: support@tanina.com</p>
-        <p className="text-gray-600">Phone: +1 234 567 890</p>
+      <div className=''>
+        <h5 className="text-lg font-semibold  ">Contact Us</h5>
+        <p className="">Email: support@tanina.com</p>
+        <p className="">Phone: +1 234 567 890</p>
       </div>
     </div>
 
-    <div className=" border-gray-200  text-center">
-      <p className="text-gray-600 text-sm">
+    <div className="  text-center">
+      <p className=" text-sm">
         &copy; {new Date().getFullYear()} Tanina. All Rights Reserved.
       </p>
       <div className="flex justify-center space-x-4 mt-2">
