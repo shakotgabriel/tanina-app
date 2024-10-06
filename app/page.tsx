@@ -178,7 +178,7 @@ const Home: React.FC = () => {
       <ScrollAnimation>
 
 
-      <section className="bg-green-50 py-16 px-28 mb-20 ml-20 mr-20 rounded-3xl ">
+      <section className="bg-green-50 py-16 px-28 mb-20 ml-20 mr-20 rounded-3xl mt-20">
       
         <div className="container mx-auto px-8">
           <h2 className="text-3xl font-bold text-center mb-20 mt-28 text-green-800">Why choose Tanina Transfer</h2>
@@ -293,13 +293,13 @@ const Home: React.FC = () => {
       <ScrollAnimation>
       <FAQSection /></ScrollAnimation>
 
-<FadeinRight> 
 
-<footer className="bg-white py-10">
+
+<footer className="bg-white ">
   <div className="container mx-auto px-4">
     <div className="flex flex-col md:flex-row justify-between items-start">
       {/* Logo Section */}
-      <div className="lg:h-[100px] md:h-[60px] max-md:mt-8 mb-8 md:mb-0">
+      <div className="lg:h-[100px] md:h-[50px] max-md:mt-8 mb-8 md:mb-0">
         <a href="/">
           <Image
             src="/images/LOGO2.png"
@@ -346,7 +346,7 @@ const Home: React.FC = () => {
       </div>
     </div>
 
-    <div className=" border-gray-200  text-center mt-8">
+    <div className=" border-gray-200  text-center">
       <p className="text-gray-600 text-sm">
         &copy; {new Date().getFullYear()} Tanina. All Rights Reserved.
       </p>
@@ -374,7 +374,7 @@ const Home: React.FC = () => {
 
 
 
-</FadeinRight>
+
     </>
   );
 };
