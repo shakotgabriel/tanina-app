@@ -25,12 +25,12 @@ const FAQSection: React.FC = () => {
 
 
     
-    <section className="bg-green-50 py-10 rounded-lg px-10 ">
+    <section className="py-10 rounded-lg px-10 ">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">Frequently Asked Questions</h2>
         <div className="max-w-3xl mx-auto space-y-4">
           {/* FAQ Item 1 */}
-          <div className="bg-white rounded-lg shadow-2xl">
+          <div className="bg-green-200 rounded-lg shadow-2xl">
             <button
               className="w-full flex justify-between items-center p-4 text-lg font-bold text-left text-gray-900"
               onClick={() => toggleFAQ(0)}
@@ -39,7 +39,7 @@ const FAQSection: React.FC = () => {
               <span>{activeIndex === 0 ? '-' : '+'}</span>
             </button>
             {activeIndex === 0 && (
-              <div className="px-4 pb-4 text-gray-700">
+              <div className="px-4 pb-4 text-black italic font-black">
                 Tanina is a money transfer service trusted by millions worldwide for safe, fast, and reliable transfers.
               </div>
             )}
