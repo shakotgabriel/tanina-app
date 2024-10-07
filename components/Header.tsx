@@ -10,16 +10,16 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-xl">
+    <header className="bg-black shadow-xl">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex-shrink-5 flex items-center">
             <Link href="/" className="flex items-center">
               <Image 
-                src="/images/LOGO2.png" 
+                src="/images/removed.png" 
                 alt="Tanina Logo" 
-                width={52} 
-                height={72} 
+                width={152} 
+                height={100} 
               />
             </Link>
           </div>
@@ -45,8 +45,8 @@ const Header = () => {
             <Link href="/contacts" className="ml-4 px-3 py-2 rounded-md text-sm font-bold text-green-700 hover:text-green-900 hover:bg-green-200 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Contacts</Link>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
-            <Link href="/login" className="px-3 py-2 rounded-md text-sm font-bold text-green-900 hover:text-white hover:bg-black  ">Log In</Link>
-            <Link href="/signup" className="ml-4 px-3 py-2 rounded-md text-sm font-bold text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:shadow-outline-green active:bg-green-700 transition duration-150 ease-in-out">Sign Up</Link>
+            <Link href="/login" className=" px-3 py-2 rounded-md text-sm font-bold text-white bg-green-600 hover:bg-green-500   ">Log In</Link>
+            <Link href="/signup" className="ml-4 px-3 py-2 rounded-md text-sm font-bold text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:shadow-outline-green active:bg-green-700 ">Sign Up</Link>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             <button 

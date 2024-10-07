@@ -27,7 +27,7 @@ const FAQSection: React.FC = () => {
     
     <section className="py-10 rounded-lg px-10 ">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-white">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-green-200">Frequently Asked Questions</h2>
         <div className="max-w-3xl mx-auto space-y-4">
           {/* FAQ Item 1 */}
           <div className="bg-green-200 rounded-lg shadow-2xl">
@@ -46,7 +46,7 @@ const FAQSection: React.FC = () => {
           </div>
 
           {/* FAQ Item 2 */}
-          <div className="bg-white rounded-lg shadow-2xl">
+          <div className="bg-green-200 rounded-lg shadow-2xl">
             <button
               className="w-full flex justify-between items-center p-4 text-lg font-bold text-left text-gray-900"
               onClick={() => toggleFAQ(1)}
@@ -62,7 +62,7 @@ const FAQSection: React.FC = () => {
           </div>
 
           {/* FAQ Item 3 */}
-          <div className="bg-white rounded-lg shadow-2xl">
+          <div className="bg-green-200 rounded-lg shadow-2xl">
             <button
               className="w-full flex justify-between items-center p-4 text-lg font-bold text-left text-gray-900"
               onClick={() => toggleFAQ(2)}
@@ -78,7 +78,7 @@ const FAQSection: React.FC = () => {
           </div>
 
           {/* FAQ Item 4 */}
-          <div className="bg-white rounded-lg shadow-2xl">
+          <div className="bg-green-200 rounded-lg shadow-2xl">
             <button
               className="w-full flex justify-between items-center p-4 text-lg font-bold text-left text-gray-900"
               onClick={() => toggleFAQ(3)}
@@ -98,6 +98,24 @@ const FAQSection: React.FC = () => {
   );
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const Home: React.FC = () => {
   const [sendFrom, setSendFrom] = useState<string>('');
   const [sendTo, setSendTo] = useState<string>('');
@@ -105,23 +123,24 @@ const Home: React.FC = () => {
   return (
 
     
-    <main className='bg-smoky'> <ScrollAnimation>
+    <main className='bg-smoky '> <ScrollAnimation>
       {/* Hero Section */}
-      <div className="min-h-screen flex items-center relative" style={{
+      
+      <div className="min-h-screen flex items-center relative rounded-2xl " style={{
         backgroundImage: `url(/images/secure.webp)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>
-        <div className="container flex flex-col md:flex-row items-center justify-between">
+        <div className="container flex flex-col md:flex-row items-center justify-between absolute inset-0 bg-black/30">
           {/* Text content */}
           <motion.div
           viewport={{ once: false }}
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 10, opacity: 1 }}
             transition={{ duration: 1.8 }}
-            className="md:w-1/2 mr-40 ml-40 bg-opacity-10 backdrop-filter backdrop-blur-lg p-4 rounded-xl shadow-lg"
+            className="md:w-1/2 mr-40 ml-40 bg-opacity-10 backdrop-filter backdrop-blur-lg p-4 rounded-xl shadow-lg z-10"
           >
-            <h1 className="text-4xl md:text-5xl font-black mb-6 text-green-100 shadow-text">
+            <h1 className="text-4xl md:text-5xl font-black mb-6 text-green-100 shadow-text ">
               Send money online <br />with Tanina
             </h1>
             <p className="text-xl font-black mb-8 text-green-100 shadow-text">
@@ -180,12 +199,9 @@ const Home: React.FC = () => {
       <ScrollAnimation>
 
 
-      <section className="relative bg-gradient-to-bl from-green-400 via-green-300 to-green-400 py-16 px-28  rounded-3xl mt-20 overflow-hidden">
+      <section className="relative  py-16 px-28  rounded-3xl mt-20 overflow-hidden">
   {/* Background Image */}
-  <section
-    className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
-    style={{ backgroundImage: "url('/images/moneyp.jpg')" }}
-  ></section>
+ 
   
   {/* Content */}
   <div className="relative z-10 container mx-auto px-8">
@@ -330,7 +346,7 @@ const Home: React.FC = () => {
 
 
 
-<footer className=" text-white font-black text-base  " id='footer'>
+<footer className=" text-green-200 font-black text-base  " id='footer'>
   <div className="container mx-auto px-4">
     <div className="flex flex-col md:flex-row justify-between items-start">
       {/* Logo Section */}
